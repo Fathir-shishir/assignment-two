@@ -80,6 +80,14 @@
      justify-items: center;
      align-items: center;
  }
+  .rating>p{
+     margin-top: 0px;
+     line-height: 1;
+  }
+  .next-one{
+      text-align: end;
+      color:rgba(224, 44, 109, 1) ;
+  }
  .section-three footer{
      display: flex;
      justify-content: flex-end;
@@ -100,9 +108,14 @@
      background-color: #0A0826;
      color: white;
      text-align: center;
+     padding: 10px 0px;
  }
  footer p{
      margin: 0px;
+ }
+
+ .social> i{
+     margin-right: 10px;
  }
 
  /* media quary for mobile  */
