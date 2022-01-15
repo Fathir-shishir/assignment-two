@@ -4,6 +4,27 @@
  /* common style */
  body{
     font-family: 'Poppins', sans-serif;
+    margin: 0px 0px;
+ }
+ .btn{
+     background-color: rgba(224, 44, 109, 1);
+     border: 0px;
+     padding: 7px 20px;
+     border-radius: 10px;
+     color: white;
+     font-weight: 700;
+ }
+ .fa-star {
+     color: #FB8200;
+ }
+ .fa-star-half-alt{
+     color: #FB8200;
+ }
+ 
+ .container{
+     margin-bottom: 15px;
+     margin-left: 20px;
+     margin-right: 20px;
  }
   /* header-style */
  .header-section{
@@ -23,3 +44,113 @@
      text-decoration: none;
     color: black;
  }
+ /* section one style */
+ .section-one{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .section-one img{
+    width: 90%;
+ }
+ .section-one-pic{
+     background-image:url(../images/Circle\ design.svg);
+     background-size: 80%;
+     background-repeat: no-repeat;
+     /* background-size: cover; */
+     /* width: 60%; */
+ }
+
+ /* section two style */
+ .logos{
+     display: grid;
+     grid-template-columns: repeat(7,1fr);
+     align-items: center;
+     justify-items:center;
+ }
+
+ /* section three style */
+ .section-three header {
+     text-align: center;
+ }
+ 
+ .collections{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     justify-items: center;
+     align-items: center;
+ }
+ .section-three footer{
+     display: flex;
+     justify-content: flex-end;
+ }
+ /* section four start  */
+ .section-four{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+    
+ }
+ .secion-four-details{
+    padding: 15px;
+ }
+
+ /* footer start  */
+ footer{
+     background-color: #0A0826;
+     color: white;
+     text-align: center;
+ }
+ footer p{
+     margin: 0px;
+ }
+
+ /* media quary for mobile  */
+ @media only screen and (max-width: 688px) {
+     body{
+         margin: 0px;
+        
+     }
+   
+    .header-section{
+        display: none;
+    }
+    .section-one{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section-one-details{
+        text-align: center;
+    }
+    .logos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section-four{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section-four img{
+        width: 80%;
+    }
+    
+  }
+ /* tab style start  */
+
+ @media only screen and (min-width : 689px) and (max-width : 1312px) {
+    .header-section{
+        display: none;
+    }
+    .logos{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    }
