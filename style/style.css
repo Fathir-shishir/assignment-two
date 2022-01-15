@@ -58,12 +58,17 @@
  .section-one img{
     width: 90%;
  }
+ .section-one-pic :hover{
+     transform: scale(1.2) rotate(360deg);
+     transition: transform 10s, ease-in, 0.5s;
+ }
  .section-one-pic{
      background-image:url(../images/Circle\ design.svg);
      background-size: 80%;
      background-repeat: no-repeat;
      /* background-size: cover; */
      /* width: 60%; */
+     overflow: hidden;
  }
 
  /* section two style */
@@ -109,6 +114,14 @@
     padding: 15px;
  }
 
+ /* section five  */
+ .sectionFive{
+     display: flex;
+     justify-content:space-between;
+     align-items: center;
+     justify-items: center;
+ }
+
  /* footer start  */
  footer{
      background-color: #0A0826;
@@ -132,6 +145,10 @@
      }
    
     .header-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .header-section>nav{
         display: none;
     }
     .section-one{
@@ -156,6 +173,10 @@
     .section-four img{
         width: 80%;
     }
+    .sectionFive{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
     
   }
  /* tab style start  */
@@ -169,6 +190,10 @@
         grid-template-columns: repeat(4,1fr);
     }
     .collections{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sectionFive{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
